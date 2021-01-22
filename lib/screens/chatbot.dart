@@ -5,9 +5,6 @@ import 'package:simplechatbot/components/bubblerow.dart';
 import 'package:simplechatbot/components/containeravatar.dart';
 
 class ChatBotPage extends StatefulWidget {
-  ChatBotPage({Key key, this.title}) : super(key: key);
-
-  final String title;
 
   @override
   _ChatBotPageState createState() => _ChatBotPageState();
@@ -95,7 +92,6 @@ class _ChatBotPageState extends State<ChatBotPage> {
                       enabledBorder: InputBorder.none,
                       errorBorder: InputBorder.none,
                       disabledBorder: InputBorder.none,
-
                     ),
                     style: TextStyle(fontSize: 16, color: Colors.black),
                     onChanged: (value) {},
@@ -136,7 +132,6 @@ class _ChatBotPageState extends State<ChatBotPage> {
     );
   }
 
-  //for better one i have use the bubble package check out the pubspec.yaml
 
   Widget chat(String message, int side) {
     return Container(
